@@ -1,7 +1,10 @@
 #include <stdio.h>
+
 /**
  * main - use printf sizeof
+ *
  * Description: output with printf and use sizeof
+ *
  * Return: 0
  */
 int main(void)
