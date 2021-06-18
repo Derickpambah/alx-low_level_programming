@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main-entry point
+ * main - prints out the alphabet in both cases
  *
  * Description: Print lowercase and uppercase letters
  * using putchar only
