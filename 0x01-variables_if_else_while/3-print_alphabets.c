@@ -7,23 +7,21 @@
  * Description: Print lowercase and uppercase letters
  * using putchar only
  *
- * Return: ALways 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char chr;
+	char c;
 
-	chr = 'a';
-	while (chr <= 'z')
+	for (c = 'a';c <= 'z';)
 	{
-		putchar (chr);
-		chr++;
+		putchar(c);
+		c = c + 1;
 	}
-	chr = 'A';
-	while (chr <= 'Z')
+	for (c = 'A';c <= 'Z';)
 	{
-		putchar (chr);
-		chr++;
+		putchar(c);
+		c = c + 1;
 	}
 	putchar ('\n');
 	return (0);
