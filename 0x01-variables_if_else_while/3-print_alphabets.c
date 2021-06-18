@@ -4,6 +4,9 @@
 /*
  * main-entry point
  *
+ * Description: Print lowercase and uppercase letters
+ * using putchar only
+ *
  * Return: ALways 0 (success)
  */
 int main(void)
