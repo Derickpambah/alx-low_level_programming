@@ -9,7 +9,9 @@
  */
 int main(void)
 {
-	(write(1, &Holberton, 1));
-	
+	int _putchar(char c)
+	{
+		return (write(1, &Holberton, 1));
+	}
 	return (0);
 }
