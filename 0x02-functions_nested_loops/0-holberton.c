@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int _putchar(char c)
+	int _putchar(char 'H''o''l''b''e''r''t''o''n')
 	{
 		return (write(1, &Holberton, 1));
 	}
