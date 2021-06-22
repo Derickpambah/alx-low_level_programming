@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "holberton.h"
 
 /**
  * main: entry-point
@@ -9,9 +9,16 @@
  */
 int main(void)
 {
-	int _putchar(char ''H''o''l''b''e''r''t''o''n'')
-	{
-		return (write(1, &Holberton, 1));
-	}
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
+
 	return (0);
 }
