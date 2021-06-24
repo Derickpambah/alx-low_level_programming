@@ -8,41 +8,18 @@
 
 void print_number(int n)
 {
-	int i, j, digit, digits, power;
-	unsigned int temp, numchar, number;
+	unsigned int m;
 
-	digit = 0;
 	if (n < 0)
 	{
 		_putchar('-');
-		temp = -n;
+		m = -n;
 	}
 	else
 	{
-		temp = n;
+		m = n;
 	}
-
-	number = temp;
-
-	while (number >= 10)
-	{
-		number = number / 10;
-		digit++;
-	}
-	digits = digit + 1;
-	power = 1;
-	i = 1;
-
-	while (i < digits)
-	{
-		power = power * 10;
-		i++;
-	}
-	j = power;
-	while (j >= 1)
-	{
-		numchar = (temp / j) % 10;
-		putchar(numchar + '0');
-		j = j / 10;
-	}
+	if (m / 10 != 0)
+		print_number(m / 10);
+	_putchar((m % 10) + '0');
 }
