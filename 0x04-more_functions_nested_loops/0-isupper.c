@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * * _isupper - checks uppercase letters
- * * @c: takes character in ASCII
- * *
- * * Return: 0 or 1
- * */
+ * _isupper - checks uppercase letters
+ * @c: takes character in ASCII
+ *
+ * Return: 0 or 1
+ */
 
 int _isupper(int c)
 {
