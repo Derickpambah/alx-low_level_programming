@@ -1,0 +1,48 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * char *_memset - prints buffer in Hexa
+ *
+ * @s: the address of the memory to print
+ * @n: the size of the memory to print
+ *
+ * Return: Nothing
+ */
+void char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int j;
+
+	j = 0;
+	while (j < n)
+	{
+		if (j % 10)
+		{
+			printf(" ");
+		}
+		if (!(j % 10) && j)
+		{
+			printf("\n");
+		}
+		printf("0x%02x", s[j]);
+		j++;
+	}
+	printf("\n");
+}
+/**
+ * main - check the code for ALX school students
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+	char s[98] = {0X00};
+
+	char *_memset(s, 98);
+	_memset(s, 0x01, 95);
+	printf("-------------------------------------------------\n");
+	char *_memset(s, 98);
+	return (0);
+}
