@@ -3,26 +3,24 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - print varying amount of numbers
- * @separator: delimiter
- * @n: amount of arguments in list
+ * print_numbers - prints numbers with a separtor string
+ * @separator: string to separate numbers
+ * @n: number of parameters
+ * @...: parameters
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-  va_list valist;
-  unsigned int i;
+  va_list nslist;
+  unsigned int a;
 
-  if (n > 0)
-    {
-      va_start(valist, n);
-      for (i = 1; i <= n; i++)
-	{
-	  printf("%d", va_arg(valist, int));
-	  if (i != n && separator != NULL)
-	    printf("%s", separator);
-	}
-        va_end(valist);
-    }
-    printf("\n");
+  va_start(nslist, n);
+  for (a = 0; a < n;  a++)
+  {
+    if (separator == NULL || a == n - 1)
+      printf("%d", va_arg(nslist, int));
+    else
+      printf("%d%s", va_arg(nslist, int), separator);
+  }
+  va_end(nslist);
+  printf("\n");
 }
